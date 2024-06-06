@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.p2pmessenger.MainController">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+    <TextField fx:id="ipField" promptText="Enter Bootstrap Node IP"/>
+    <TextField fx:id="portField" promptText="Enter Port"/>
+    <TextField fx:id="nameField" promptText="Enter Your Name"/>
+    <Button text="Connect" onAction="#connect"/>
+    <TextArea fx:id="messageArea" editable="false" wrapText="true"/>
+    <TextField fx:id="inputField" promptText="Enter Message"/>
+    <Button text="Send" onAction="#sendMessage"/>
+</VBox>
